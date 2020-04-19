@@ -13,6 +13,8 @@ type
 
   TForm1 = class(TForm)
     Button1: TButton;
+    enama: TEdit;
+    Label1: TLabel;
     procedure Button1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure ListBox1Click(Sender: TObject);
@@ -33,7 +35,7 @@ implementation
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
-  ShowMessage ('Hello World') ;
+  ShowMessage ('Hello '+enama.text) ;
 end;
 
 procedure TForm1.Button1Click(Sender: TObject);
